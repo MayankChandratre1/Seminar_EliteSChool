@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root{
+    --tertiary:#F4EEFF;
+    --secondary: #DCD6F7;
+    --sub_primary:#A6B1E1;
+    --primary:#424874;
+}
+
+.playfair-display-600 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+.playfair-display-900 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+.playfair-display-400 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100dvh;
+}
+
+header{
+    min-height: 10vh;
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1.5rem;
+}
+.logo img{
+    width: 60px;
+    object-fit: contain;
+}
+
+header > .logo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+header > nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header > nav a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--primary);
+}
+
+header > nav span, button{
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    margin: 0.5rem;
+}
+header nav span:hover{
+    background-color: var(--sub_primary);
+}
+header nav button{
+    background-color: var(--primary); 
+    margin: 0.5rem 0.9rem;
+}
+header nav button a{
+    color: var(--tertiary);
+}
+header nav button:hover{
+    box-shadow: 2px 2px 0px black;
+}
+
+.hero-home{
+    height: 80vh;
+    background:var(--tertiary) url(assets/school_back.webp) no-repeat ;
+    background-size: 80%;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-home h1{
+    font-size: 7rem;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    backdrop-filter: blur(2px) ;
+}
+
+.hero-home h1,q{
+    padding: 1rem;
+    border-radius: 50px;
+}
+.hero-home q{
+    background-color: black;
+    color: var(--tertiary);
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px black;
+}
+
+.aboutus{
+    max-width: 100%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--secondary);
+}
+
+.aboutus h2{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    color: var(--primary);
+}
+
+.aboutus .container .item{
+    /* background-color: rgba(0,0,0,0.5); */
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.aboutus .container .item img{
+    width: 650px;
+    object-fit: cover;
+    border: 10px double var(--primary);
+    border-radius: 50px;
+    box-shadow: 0px 0px 5px black;
+    transition: all linear 100ms;
+}
+.aboutus .container .item:hover img{
+    scale: 1.1;
+}
+
+.aboutus .container .item .text h4{
+    font-size: 2.5rem;
+    color: var(--primary);
+}
+
+.testimonial-section{
+    min-height: 50vh;
+    background-color: var(--tertiary);
+    padding: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    align-items: center;
+}
+
+.testimonial-section .review{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review .author{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.review .text{
+    text-align: center;
+}
+.review h4 span{
+    text-align: center;
+}
