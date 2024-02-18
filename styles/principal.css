@@ -1,0 +1,21 @@
+.intro {
+    min-height: 50vh;
+    background-color: var(--tertiary);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 2rem;
+}
+
+.intro .profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: var(--primary);
+}
+
+.intro .profile img{
+    width: 50%;
+    border-radius: 50%;
+   
+}
