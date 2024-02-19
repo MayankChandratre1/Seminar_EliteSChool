@@ -53,7 +53,7 @@
 }
 
 .aboutus .container .item img{
-    width: 650px;
+    width: 60%;
     object-fit: cover;
     border: 10px double var(--primary);
     border-radius: 50px;
