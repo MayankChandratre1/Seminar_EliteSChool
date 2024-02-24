@@ -1,0 +1,137 @@
+.subjects{
+    max-height: 20vh;
+    padding: 2rem;
+    background-color: var(--secondary);
+    position: sticky;
+    top: 0;
+    box-shadow: 2px 0px 5px black;
+}
+
+.subjects ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+}
+
+.subjects ul li{
+    background-color: var(--tertiary);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    color: var(--primary);
+}
+.subjects ul li a{
+    text-decoration: none;
+    color:var(--primary);
+}
+.subjects ul li:hover { 
+    background-color: var(--primary);
+}
+
+.subjects ul li:hover a{ 
+    color: var(--tertiary);
+}
+
+.faculty{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    background-color: var(--tertiary);
+}
+.faculty .sub{
+   border-block: 2px solid var(--primary);
+   padding: 2rem 0;
+   margin-top: 2rem;
+}
+
+.faculty .sub h2{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+.faculty .sub .container{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.faculty .sub .container .card{
+    max-width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius:20px;
+    box-shadow: 2px 2px 5px  rgba(0, 0, 0, 0.14), inset 1px 1px 5px rgba(0, 0, 0, 0.211);
+}
+
+.faculty .sub .container .card img{
+   width: 100%;
+   border-radius: 20px;
+   margin-bottom: 1rem;
+}
+.faculty .sub .container .card h3,p{
+   margin-bottom: 1rem;
+}
+.faculty .sub .container .card button{
+    width: 100%;
+   padding: 1rem;
+   font-size: 1.2rem;
+   background-color: var(--primary);
+}
+
+.faculty .sub .container .card button {
+   text-decoration: none;
+   color: var(--tertiary);
+   transition: all ease 500ms;
+}
+
+.faculty .sub .container .card button:active {
+   transform: scale(0.7);
+}
+
+.contactModal{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap:1rem;
+    align-items: center;
+    scale: 0.1;
+}
+
+.contactModal .modal{
+    width: 300px;
+    padding: 2rem;
+    border-radius: 20px;
+    background-color: var(--secondary);
+    color: var(--primary);
+    display: flex;
+    justify-content: center;
+    gap:1rem;
+    align-items: center;
+    box-shadow: -1px -1px 5px rgba(0, 0, 0, 0.244),inset -1px -1px 5px rgba(0, 0, 0, 0.244);
+}
+
+.contactModal{
+    backdrop-filter: blur(10px);
+    transition: all ease 100ms;
+}
+
+.contactModal  button{
+    background-color: var(--primary);
+    font-size: 1.2rem;
+    border-radius: 10px;
+    color: var(--tertiary);
+}
+.contactModal button a{
+    text-decoration: none;
+    color: var(--tertiary);
+}

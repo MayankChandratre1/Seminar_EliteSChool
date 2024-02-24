@@ -5,6 +5,7 @@
     --secondary: #DCD6F7;
     --sub_primary:#A6B1E1;
     --primary:#424874;
+    scroll-behavior: smooth;
 }
 
 .playfair-display-600 {
@@ -24,6 +25,22 @@
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: 400;
+    font-style: normal;
+  }
+
+  .poppins-100 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  .poppins-400 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .poppins-900 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
     font-style: normal;
   }
 
