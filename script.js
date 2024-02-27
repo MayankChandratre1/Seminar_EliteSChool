@@ -1,3 +1,3 @@
-document.querySelector("form").onsubmit = ()=>{
-  alert("submitted")
+function call(){
+ alert("Submitted")
 }
