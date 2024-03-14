@@ -1,6 +1,9 @@
 let modalContainer = document.getElementById("contactModal");
 let modal = document.getElementsByClassName("modal")[0];
 
+
+
+
 modalContainer.addEventListener("click",(e)=>{
     if(!(e.target.className === "modal")){
         toggleModal();

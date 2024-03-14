@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Page - The Elite School</title>
+    <link rel="stylesheet" href="../styles/header_footer.css">
+    <link rel="stylesheet" href="../styles/admission.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../assets/school_logo300.webp" alt="logo">
+            <h1 class="playfair-display-600">The Elite School</h1>
+        </div>
+        <nav>
+            <span><a href="./index.html" class="links">Home</a></span>
+            <span><a href="./pages/principal.html" class="links">Principal's Desk</a></span>
+            <span><a href="./pages/faculty.html" class="links">Faculty</a></span>
+            <span><a href="./pages/students.html" class="links">Student Council</a></span>
+            <a href="#" class="links"><button>Admission</a></button>
+        </nav>
+    </header>
+    <marquee  direction="left">The Elite School, Latur. +91 02382-222627 Near Budha Garden, Kanheri Chowk, Latur Office Time : 10 am to 5 pm. <a href="./index.html">Admissions Open Standerd 1 to 10th.</a></marquee>
+
+
+    <section class="terms">
+        <h2>Terms & Conditions</h2>
+        <ol>
+            <li>
+                <h3>Eligibility Criteria:</h3>
+                <ul>
+                    <li>Applicants must meet the minimum age requirements specified for each grade level as per the school's policy.</li>
+                    <li>Submission of accurate and verifiable information is essential. Any falsification of records may result in the rejection of the application.</li>
+                </ul>
+            </li>
+            <li>
+                <h3>Application Process:</h3>
+                <ul>
+                    <li>Completion of the admission form does not guarantee admission to the school.</li>
+                    <li>All sections of the admission form must be filled out completely and accurately. Incomplete forms may be rejected.</li>
+                    <li>Applicants are required to submit all necessary supporting documents as outlined in the admission guidelines.</li>
+                    <li>Submission of the admission form does not imply any commitment or obligation from the school's side.</li>
+                </ul>
+            </li>
+            <li>
+                <h3>Documentation:</h3>
+                <ul>
+                    <li>Applicants must provide authentic copies of required documents, including birth certificates, previous academic records, medical certificates, and any other documents specified by the school.</li>
+                    <li>The school reserves the right to verify the authenticity of submitted documents.</li>
+                </ul>
+            </li>
+            <li>
+                <h3>Admission Decision:</h3>
+                <ul>
+                    <li>The admission decision rests solely with the school's admission committee.</li>
+                    <li>The school reserves the right to accept or reject any application without providing any reason.</li>
+                    <li>Admission decisions are final and not subject to appeal.</li>
+                </ul>
+            </li>
+            <li>
+                <h3>Communication:</h3>
+                <ul>
+                    <li>All communication regarding the admission process will be conducted through the contact information provided by the applicant.</li>
+                    <li>It is the responsibility of the applicant to ensure that the provided contact information is accurate and up to date.</li>
+                </ul>
+            </li>
+            <li>
+                <h3>Fee Payment:</h3>
+                <ul>
+                    <li>Payment of the application fee does not guarantee admission.</li>
+                    <li>Once admission is offered, timely payment of the admission fee and any other applicable fees is required to secure the seat. Failure to do so may result in the forfeiture of the admission offer.</li>
+                </ul>
+            </li>
+            <li>
+                <h3>Residency and Citizenship:</h3>
+                <ul>
+                    <li>Admission priority may be given to applicants who are residents of the local community or citizens of the country, as per the school's policy.</li>
+                </ul>
+            </li>
+            <li>
+                <h3>Special Needs:</h3>
+                <ul>
+                    <li>Applicants with special needs or disabilities are encouraged to provide relevant information in the admission form to facilitate appropriate support services. However, admission will be subject to the school's capacity to provide necessary accommodations.</li>
+                </ul>
+            </li>
+            <li>
+                <h3>Code of Conduct:</h3>
+                <ul>
+                    <li>All applicants and their guardians agree to abide by the school's code of conduct and disciplinary policies.</li>
+                    <li>The school reserves the right to take appropriate disciplinary action, including the cancellation of admission, in cases of misconduct.</li>
+                </ul>
+            </li>
+            <li>
+                <h3>Modification of Terms:</h3>
+                <ul>
+                    <li>The school reserves the right to modify or update these terms and conditions at any time without prior notice.</li>
+                </ul>
+            </li>
+        </ol>
+        <p><input type="checkbox" name="read" id="read"> I have read and understood all terms and condition</p>
+    </section>
+
+
+    <section class="form">
+        <button class="form-btn" onclick="toggleAdmission()">Admission Form</button>
+
+        <div class="form-box form-box-hide">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSclx_1X2c4y-WtnNKX1LfN3rkVg0Gcua1arvRbZm1x0LfUyZQ/viewform?embedded=true" width="640"  frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <button  class="form-btn"  onclick="toggleAdmission()">Close</button>
+        </div>
+        
+    </section>
+
+    <footer>
+        <div class="info">
+            <h5>&copy; The Elite School</h5>
+            <p class="addr">Near Budha Garden, Kanheri Chowk, Latur</p>
+            <p class="tele">&#9742; +91 02382-222627</p>
+        <div class="socials">
+            <a href="www.youtube.com"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="red" class="bi bi-youtube" viewBox="0 0 16 16">
+                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+              </svg></a>
+            <a href="www.facebook.com"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+              </svg></a>
+        </div>
+        </div>
+        <div class="footer-nav">
+            <a href="#">Home</a>
+            <a href="#">Principals Desk</a>
+            <a href="#">Faculty</a>
+            <a href="#">Student Council</a>
+            <a href="#">Admission Section</a>
+        </div>
+        <div class="newsletter">
+            <h3>Subscribe to our newsletter</h3>
+            <p class="newsletter-info">Made by students for parents</p>
+            <form action="#">
+                <label for="email">EMAIL:</label>
+                <input type="text" name="email" placeholder="johndoe@gmail.com">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </footer>
+
+    <script src="../modalAdmission.js"></script>
+</body>
+</html>
