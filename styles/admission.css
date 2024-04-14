@@ -76,6 +76,11 @@ iframe{
 
 
 @media (max-width:400px){
+    .terms{
+       height: 50vh;
+       overflow-y: scroll;
+    }
+
     .terms ol{
         font-size: 0.8rem;
     }
@@ -101,7 +106,6 @@ iframe{
     }
     
     .form-box{
-        top: 160%;
         bottom: 10%;
     }
     
