@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width1024">
-    <meta name="viewport" content="width=1024, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Elite School</title>
     <link rel="stylesheet" href="./styles/header_footer.css">
     <link rel="stylesheet" href="./styles/home.css">
@@ -16,11 +16,22 @@
             <h1 class="playfair-display-600">The Elite School</h1>
         </div>
         <nav>
-            <span><a href="./index.html" class="links">Home</a></span>
-            <span><a href="./pages/principal.html" class="links">Principal's Desk</a></span>
-            <span><a href="./pages/faculty.html" class="links">Faculty</a></span>
-            <span><a href="./pages/students.html" class="links">Student Council</a></span>
+            <div class="nav-menu">
+                <span><a href="./index.html" class="links">Home</a></span>
+                <span><a href="./pages/principal.html" class="links">Principal's Desk</a></span>
+                <span><a href="./pages/faculty.html" class="links">Faculty</a></span>
+                <span><a href="./pages/students.html" class="links">Student Council</a></span>
+            </div>
             <a href="./pages/admission.html" class="links"><button>Admission</a></button>
+            <div class="menu">
+                <button class="menu-toggle">Go to &darr;</button>
+                <div class="menu-box menu-hidden">
+                    <span><a href="./index.html" class="links">Home</a></span>
+                    <span><a href="./pages/principal.html" class="links">Principal's Desk</a></span>
+                    <span><a href="./pages/faculty.html" class="links">Faculty</a></span>
+                    <span><a href="./pages/students.html" class="links">Student Council</a></span>
+                </div>
+            </div>
         </nav>
     </header>
     <marquee  direction="left">The Elite School, Latur. +91 02382-222627 Near Budha Garden, Kanheri Chowk, Latur Office Time : 10 am to 5 pm. <a href="./index.html">Admissions Open Standerd 1 to 10th.</a></marquee>
@@ -41,11 +52,11 @@
                 </div>
             </div>
             <div class="item">
+                <img src="./assets/school_canteen1080.webp" alt="">
                 <div class="text">
                     <h4 class="playfair-display-900">CANTEEN</h4>
                     <p class="playfair-display-600">Nestled within the heart of the campus, the school canteen is a bustling hub of culinary delight. Aromatic scents waft through the air as students queue up to sample an array of delicious snacks and wholesome meals. Vibrant murals adorn the walls, creating a welcoming atmosphere where students can relax and refuel between classes. With a diverse menu catering to various tastes and dietary preferences, the canteen is not just a place to eat but also a social gathering spot where friendships are forged over shared meals and laughter.</p>
                     </div>
-                <img src="./assets/school_canteen1080.webp" alt="">
             </div>
             <div class="item">
                 <img src="./assets/school_playground.webp" alt="">
@@ -104,6 +115,7 @@
             </form>
         </div>
     </footer>
+    <script src="./modalMeu.js"></script>
     <script src="./script.js"></script>
  
 </body>

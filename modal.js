@@ -3,22 +3,25 @@ let modal = document.getElementsByClassName("modal")[0];
 
 
 
-
 modalContainer.addEventListener("click",(e)=>{
     if(!(e.target.className === "modal")){
-        toggleModal();
+        toggleModal(modalContainer);
     }
 })
 
 document.querySelectorAll(".contact").forEach((button)=>{
     button.addEventListener( "click" , ()=>{
-           toggleModal();
+           toggleModal(modalContainer);
     })
 })
 
 
+document.querySelector(".menu-toggle").onclick =  ()=>{
+        console.log(menuModal);
+           toggleModal(menuModal);
+    }
 
-function toggleModal(){
+function toggleModal(modalContainer){
     if(modalContainer.style.display != "none"){
 
         modalContainer.style.display = "none";

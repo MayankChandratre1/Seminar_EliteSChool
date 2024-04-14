@@ -104,3 +104,72 @@
     border-radius: 20px;
     margin-bottom: 1.3rem;
 }
+
+@media (max-width:400px) {
+    .intro {
+        grid-template-columns: 1fr;
+    }
+
+    .intro .desc {
+        margin-top: 1rem;
+        text-align: center;
+    }
+    
+    .intro .desc span{
+        font-size: 1.2rem;
+    }
+
+    .mission{
+        text-align: center;
+    }
+    
+    
+    .mission h2{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .mission {
+        font-size: 0.8rem;
+    }
+
+    .mission .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .mission .container .item{   
+        font-size: 1rem;
+    }
+    
+    
+    .achievements  {
+        gap: 1rem;
+    }
+    
+    .achievements h2{
+        font-size: 1.5rem;
+    }
+    .achievements .container{
+        padding: 1rem;
+    
+    }
+    
+    .achievements .container .item{
+        text-align: center;
+    }
+    
+    .achievements .container .item:last-child{
+        border: none;
+    }
+    .achievements .container .item h4{
+        font-size: 1.2rem;
+        color: var(--primary);
+    }
+    
+    .achievements .container .item img{
+        width: 100%; 
+        margin-bottom: 1rem;
+    }
+}

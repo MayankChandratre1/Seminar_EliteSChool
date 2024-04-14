@@ -55,15 +55,23 @@ body{
 }
 
 header{
-    min-height: 10vh;
+    height: 10vh;
     background-color: var(--secondary);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 0 5px black;
 }
+
+
+
 .logo img{
-    width: 60px;
+    max-width: 150px;
+    width: 25%;
     object-fit: contain;
 }
 
@@ -73,6 +81,8 @@ header > .logo{
     gap: 1rem;
 }
 
+
+
 header > nav{
     display: flex;
     justify-content: space-evenly;
@@ -80,7 +90,7 @@ header > nav{
 
 header > nav a{
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: var(--primary);
 }
 
@@ -103,6 +113,33 @@ header nav button a{
 header nav button:hover{
     box-shadow: 2px 2px 0px black;
 }
+
+.nav-menu{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    place-items: center;
+}
+
+.menu-hidden span:hover{
+    background-color: var(--sub_primary);
+}
+
+.menu-box{
+    display: none;
+    position: absolute;
+    right: 0.3rem;
+    background-color: white;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px black;
+}
+
+header .menu button{
+    display: none;
+}
+
 marquee span{
     padding: 1rem;
     text-decoration: underline;
@@ -116,7 +153,7 @@ footer{
     padding: 2rem;
 }
 footer .info{
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: rgba(0,0,0,0.7);
     display: flex;
     flex-direction: column;
@@ -142,8 +179,8 @@ footer .footer-nav{
 }
 footer .footer-nav a{
    color: rgba(0,0,0,0.7);
-   text-decoration: none;
-   font-size: 1.1rem;
+   text-decoration: underline;
+   font-size: 0.7rem;
 }
 footer .footer-nav a:hover{
     text-decoration: underline;
@@ -162,7 +199,7 @@ footer .newsletter h3{
     color: var(--primary);
 }
 footer .newsletter .newsletter-info{
-    font-size: 1.9rem;
+    font-size: 1rem;
     color: rgba(0,0,0,0.7);
 }
 footer .newsletter form{
@@ -179,4 +216,69 @@ footer .newsletter form input{
 }
 footer .newsletter form button{
     border: 1px solid var(--primary);
+}
+
+
+@media (max-width:400px) {
+    header .logo h1{
+        font-size: 0.7rem;
+    }
+    .nav-menu{
+        display: none;
+    }
+
+    header > nav a{
+        text-decoration: none;
+        font-size: 0.7rem;
+        color: var(--primary);
+    }
+    
+    header > nav span, button{
+        padding: 0.2rem 0.5rem;
+        border: none;
+        border-radius: 20px;
+    }
+
+    header .menu button{
+        display: block;
+        padding: 0.2rem 0.5rem;
+        font-size: 0.7rem;
+        border: 1px solid var(--primary);
+        color: var(--primary);
+        width: 3.5rem;
+        background: none;
+    }
+
+    footer h5{
+        font-size: 0.7rem;
+    }
+
+    footer .info{
+        font-size: 0.7rem;
+    }
+    footer .info .socials{
+        display: flex;
+      }
+
+    footer .info .socials a svg{
+        width: 20px;
+      }
+
+    footer .newsletter{
+        font-size: 1rem;
+        padding: 0;
+    }
+    footer .newsletter form input{
+        font-size: 0.7rem;
+    }
+      footer .newsletter h3{
+        font-size: 1.1rem;
+    }
+
+    footer .newsletter form input,footer .newsletter form button{
+        margin: 0.5;
+    }
+    footer .newsletter form{
+        margin-top: 0;
+    }
 }

@@ -73,3 +73,43 @@ iframe{
 .form-btn:active{
     scale: 0.7;
 }
+
+
+@media (max-width:400px){
+    .terms ol{
+        font-size: 0.8rem;
+    }
+    
+    .terms ol ul{
+        font-size: 0.79rem;
+    }
+    
+    input[type="checkbox"]{
+       width: 15px;
+       height: 15px;
+    }
+    .terms p{
+        padding: 1rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+
+    .form {
+        display: grid;
+        place-items: center;
+    }
+    
+    .form-box{
+        top: 160%;
+        bottom: 10%;
+    }
+    
+    iframe{
+        height: 100%;
+        width: 100%;
+        overflow-y: scroll;
+        scrollbar-width: 10px;
+    }      
+    
+}

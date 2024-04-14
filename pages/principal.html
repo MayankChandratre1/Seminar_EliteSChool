@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width1024">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Principal's Desk - The Elite School</title>
     <link rel="stylesheet" href="../styles/header_footer.css">
     <link rel="stylesheet" href="../styles/principal.css">
+    
 </head>
 <body>
     <header>
@@ -14,11 +15,22 @@
             <h1 class="playfair-display-600">The Elite School</h1>
         </div>
         <nav>
+            <div class="nav-menu">
             <span><a href="../index.html" class="links">Home</a></span>
             <span><a href="./principal.html" class="links">Principal's Desk</a></span>
             <span><a href="./faculty.html" class="links">Faculty</a></span>
             <span><a href="./students.html" class="links">Student Council</a></span>
-            <a href="./pages/admission.html" class="links"><button>Admission</a></button>
+            </div>
+            <a href="./admission.html" class="links"><button>Admission</a></button>
+            <div class="menu">
+                <button class="menu-toggle">Go to &darr;</button>
+                <div class="menu-box menu-hidden">
+                    <span><a href="../index.html" class="links">Home</a></span>
+                    <span><a href="../pages/principal.html" class="links">Principal's Desk</a></span>
+                    <span><a href="../pages/faculty.html" class="links">Faculty</a></span>
+                    <span><a href="../pages/students.html" class="links">Student Council</a></span>
+                </div>
+            </div>
         </nav>
     </header>
     <marquee  direction="left">The Elite School, Latur. +91 02382-222627 Near Budha Garden, Kanheri Chowk, Latur Office Time : 10 am to 5 pm. <a href="./index.html">Admissions Open Standerd 1 to 10th.</a></marquee>
@@ -118,5 +130,7 @@
             </form>
         </div>
     </footer>
+
+    <script src="../modalMeu.js"></script>
 </body>
 </html>

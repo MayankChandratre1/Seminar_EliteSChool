@@ -11,10 +11,9 @@
 
 .hero-home h1{
     font-size: 7rem;
-    color: var(--primary);
-    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.392);
-    /* box-shadow: 1px 1px 5px var(--tertiary);  */
-    backdrop-filter: grayscale(0.5) blur(3px);
+    color: #fff;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.892);
+    backdrop-filter:blur(1px);
     margin-bottom: 2rem;
 }
 
@@ -39,7 +38,6 @@
     box-shadow: 0px 0px 5px var(--primary);
 }
 .hero-home a:hover{
-   
     background-color: var(--tertiary);
     box-shadow: 0px 0px 10px var(--primary);
 }
@@ -116,3 +114,80 @@
     color: rgba(0,0,0,0.7);
 }
 
+
+
+@media (max-width:400px) {
+    .hero-home{
+        height: 50vh;
+        background-size: 200%;
+    }
+    .hero-home h1{
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-home a{
+        font-size: 1rem;
+        padding: 0.9rem;
+    }
+    
+    .aboutus{
+        padding: 1rem;
+    }
+    
+    .aboutus h2{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .aboutus .container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .aboutus .container .item{
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+        padding: 0.3rem;
+       
+    }
+    
+    .aboutus .container .item img{
+        width: 100%;
+        margin-bottom: 0.8rem;
+    }
+
+    .aboutus .container .item .text h4{
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .aboutus .container .item .text p{
+        text-align: center;
+        font-size: 0.7rem;
+        overflow: hidden;
+    }
+
+    .testimonial-section{
+        padding: 1rem;
+        flex-direction:column;  
+    }
+    
+    .testimonial-section .review{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .review .author{
+        font-size: 1rem;
+    }
+
+    .review {
+        font-size: 0.7rem;
+    }
+
+
+}

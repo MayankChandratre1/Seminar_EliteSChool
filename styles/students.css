@@ -53,3 +53,46 @@
 .container .item:nth-child(7){
     grid-column: 2;
 }
+
+
+@media (max-width:400px) {
+
+   
+    
+    .council-body h2{
+        font-size: 2rem;
+    }
+
+    .container{
+        width: 70vw;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        place-items: center;
+    }
+    
+    .container .item{
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+
+    .container .item img{
+        border-radius: 10%;
+        width: 50%;
+        margin-bottom: 1rem;
+    }
+    
+    .president , .vice-president{
+        grid-column:span 2;
+        grid-row: span 1;
+    }
+    
+    .container .item:last-child{
+        grid-column: 2;
+    }
+    .container .item:nth-child(7){
+        grid-column: 1;
+    }
+    
+    
+}
